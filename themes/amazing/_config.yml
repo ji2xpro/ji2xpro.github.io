@@ -13,25 +13,25 @@ head:
     open_graph:
         # Page title (og:title) (optional)
         # You should leave this blank for most of the time
-        title: 辣椒の酱
+        title: Ji2xpro
         # Page type (og:type) (optional)
         # You should leave this blank for most of the time
         type: blog
         # Page URL (og:url) (optional)
         # You should leave this blank for most of the time
-        url: https://removeif.github.io/
+        url: https://ji2xpro.github.io/
         # Page cover (og:image) (optional) Default to the Open Graph image or thumbnail of the page
         # You should leave this blank for most of the time
         image: /img/avatar.png
         # Site name (og:site_name) (optional)
         # You should leave this blank for most of the time
-        site_name: 辣椒の酱
+        site_name: Ji2xpro
         # Page author (article:author) (optional)
         # You should leave this blank for most of the time
-        author: removeif
+        author: ji2xpro
         # Page description (og:description) (optional)
         # You should leave this blank for most of the time
-        description: java,技术分享,后端开发,支付框架,数据接口,算法,leetcode
+        description: java,技术分享,后端开发,自动化框架,数据接口,算法,leetcode
         # Twitter card type (twitter:card)
         twitter_card:
         # Twitter ID (twitter:creator)
@@ -49,16 +49,16 @@ head:
     structured_data:
         # Page title (optional)
         # You should leave this blank for most of the time
-        title: 辣椒の酱
+        title: Ji2xpro
         # Page description (optional)
         # You should leave this blank for most of the time
-        description: java,技术分享,后端开发,支付框架,数据接口,算法,leetcode
+        description: java,技术分享,后端开发,自动化框架,数据接口,算法,leetcode
         # Page URL (optional)
         # You should leave this blank for most of the time
-        url: https://removeif.github.io/
+        url: https://ji2xpro.github.io/
         # Page author (article:author) (optional)
         # You should leave this blank for most of the time
-        author: removeif
+        author: ji2xpro
         # Page images (optional) Default to the Open Graph image or thumbnail of the page
         # You should leave this blank for most of the time
         image: /img/avatar.png
@@ -87,7 +87,7 @@ navbar:
     links:
         Download on GitHub:
             icon: fab fa-github
-            url: 'https://github.com/removeif'
+            url: 'https://github.com/ji2xpro'
 # Page footer configurations
 footer:
     # Links to be shown on the right of the footer section
@@ -100,7 +100,7 @@ footer:
             url: 'https://creativecommons.org/licenses/by/4.0/'
         Download on GitHub:
             icon: fab fa-github
-            url: 'https://github.com/removeif'
+            url: 'https://github.com/ji2xpro'
 # Article related configurations
 article:
     # Code highlight settings
@@ -182,11 +182,11 @@ widgets:
         position: left
         type: profile
         # Author name
-        author: 辣椒の酱
+        author: Ji2xpro
         # Title of the author to be shown in the profile widget
         author_title: 尚未执佩剑，转眼即江湖
         # Author's current location to be shown in the profile widget
-        location: 阿尔及利亚
+        location: 中国.上海
         # Path or URL to the avatar to be shown in the profile widget
         avatar: /img/avatar.png
         # Whether show the rounded avatar image
@@ -194,18 +194,18 @@ widgets:
         # Email address for the Gravatar
         gravatar:
         # URL or path for the follow button
-        follow_link: 'https://weibo.com/u/3050419984'
+        follow_link: 'https://weibo.com/u/2521355870'
         # Links to be shown on the bottom of the profile widget
         social_links:
             Github:
                 icon: fab fa-github
-                url: 'https://github.com/removeif'
+                url: 'https://github.com/ji2xpro'
             Weibo:
                 icon: fab fa-weibo
-                url: 'https://weibo.com/u/3050419984'
+                url: 'https://weibo.com/u/2521355870'
             Email:
                 icon: fa fa-envelope
-                url: 'mailto:removeif@163.com'
+                url: 'mailto:ji2xpro@163.com'
             Next:
                 icon: fab fa-dribbble
                 url: 'https://removeif.github.io/remove.io'
@@ -366,7 +366,7 @@ has_copyright: true # 文中是否显示copyright true开启，false-关闭
 # http://sachinchoolur.github.io/lightGallery/docs/api.html 
 lightgallery_is_full: true #图片灯箱是否显示完整的插件(包括放大，分享等)，true-显示，false-显示简洁版
 
-website_start_time: 2018/11/11 00:00:00 #网站运行开始时间,不填不显示
+website_start_time: 2020/01/01 00:00:00 #网站运行开始时间,不填不显示
 
 footer_registered_no: #川ICP备88888888号-8 #备案号
 
