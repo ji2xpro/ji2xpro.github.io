@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>Ji2xpro Blog</title>
   
-  
+  <subtitle>ji2xpro</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ji2xpro.github.io/"/>
@@ -10,7 +10,7 @@
   <id>https://ji2xpro.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Ji2xpro</name>
     
   </author>
   
