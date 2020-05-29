@@ -50,9 +50,9 @@ https://github.com/ji2xpro/image
 https://cdn.jsdelivr.net/gh/用户名称/仓库名称@版本号/目录
 ```
 >//加载资源(版本号不填的话，默认引用最新)
-https://cdn.jsdelivr.net/gh/murenziwei/images/draw/01.png
+https://cdn.jsdelivr.net/gh/ji2xpro/image/jsDelivr/20200528201415.png
 //打开目录（后面的"/"是必要的，不然的话，打不开）
-https://cdn.jsdelivr.net/gh/murenziwei/images/
+https://cdn.jsdelivr.net/gh/ji2xpro/image/
 
 注意：版本号不是必需的，是为了区分新旧资源，如果不使用版本号，将会直接引用最新资源，除此之外还可以使用某个范围内的版本，查看所有资源等，具体使用方法如下：
 
@@ -80,6 +80,10 @@ https://cdn.jsdelivr.net/gh/jquery/jquery/
   访问统计：https://www.jsdelivr.com/package/gh/user/repo  
   比如参考：https://www.jsdelivr.com/package/gh/Molunerfinn/PicGo
 ![](https://cdn.jsdelivr.net/gh/ji2xpro/image/jsDelivr/20200528201417.png)
+
+**补充**  
+关于GitHub作为图床的使用方法请参考文章：<a href="/73d224e9/"> Hexo博客指南|第五篇:图床神器PicGo
+</a>
 
 2.2 访问npm的用法
 ```
