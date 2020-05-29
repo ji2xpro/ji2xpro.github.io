@@ -1,7 +1,7 @@
 # Version of the configuration file
 version: 3.0.0
 # Path or URL to the website's logo
-logo: /img/logo.png #https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191121115040.png
+logo: /img/logo.png #https://cdn.jsdelivr.net/gh/ji2xpro/ji2xpro.github.io@sourceCode/themes/amazing/source/img/logo.png
 # Page metadata configurations
 head:
     # URL or path to the website's icon
