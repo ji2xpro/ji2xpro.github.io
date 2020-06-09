@@ -14,6 +14,7 @@
   "dependencies": {
     "ajv": "^6.10.2",
     "bulma-stylus": "0.8.0",
+    "cheerio": "^1.0.0-rc.3",
     "deepmerge": "^4.2.2",
     "hexo": "^4.2.0",
     "hexo-abbrlink": "^2.0.5",
@@ -23,6 +24,7 @@
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^2.2.0",
     "hexo-generator-index": "^1.0.0",
+    "hexo-generator-sitemap": "^2.0.0",
     "hexo-generator-tag": "^1.0.0",
     "hexo-log": "^1.0.0",
     "hexo-pagination": "^1.0.0",
@@ -36,6 +38,9 @@
     "js-yaml": "^3.13.1",
     "moment": "^2.22.2",
     "save": "^2.4.0",
-    "semver": ">=5.0.0"
+    "semver": ">=5.0.0",
+    "request": "^2.88.2",
+    "xml-parser": "^1.2.1",
+    "yamljs": "^0.3.0"
   }
 }

@@ -10,11 +10,13 @@ date: 2019-09-09 18:52:09
 - 排名不分先后，刷新后重排，更新信息后请留言告知。
 - 会定期清理很久很久不更新的、不符合要求的友链，不再另行通知。
 - 本站不存储友链图片，如果友链图片换了无法更新。图片裂了的会替换成默认图，需要更换的请留言告知。
-- 本站友链信息如下，申请友链前请先添加本站信息：
-    网站图标：https://removeif.github.io/images/avatar.jpg
-    网站名称：辣椒の酱
-    网站地址：https://removeif.github.io
-    网站简介：后端开发，技术分享
+- `申请友链前请先添加本站信息，同时Github上互相follow一下，互相学习，共同进步。`
+- `本站友链信息如下：`
+    网站图标：https://ji2xpro.github.io/img/avatar.png
+    网站名称：Ji2xpro
+    网站地址：https://ji2xpro.github.io
+    网站简介：java，技术分享，后端开发，自动化框架，数据接口，算法，leetcode
+    Github地址：[点击去follow](https://github.com/ji2xpro/)
 
 
 <script type="text/javascript" defer src="/js/friend.js"></script>
