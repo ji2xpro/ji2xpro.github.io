@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.1"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><meta name="keywords" content="categories-java"><meta name="description" content="本文介绍Icarus 3支持的用户评论插件的安装配置。"><meta name="author" content="ji2xpro"><title>Hexo博客指南|第八篇:Icarus配置 - 用户评论插件 - Ji2xpro Blog</title><meta description="本文介绍Icarus 3支持的用户评论插件的安装配置。"><meta property="og:type" content="article"><meta property="og:title" content="Hexo博客指南|第八篇:Icarus配置 - 用户评论插件"><meta property="og:url" content="https://ji2xpro.github.io/a9423429/"><meta property="og:site_name" content="Ji2xpro"><meta property="og:description" content="本文介绍Icarus 3支持的用户评论插件的安装配置。"><meta property="og:locale" content="zh_CN"><meta property="article:published_time" content="2020-06-04T09:11:56.000Z"><meta property="article:modified_time" content="2020-06-09T07:19:20.451Z"><meta property="article:author" content="ji2xpro"><meta property="article:tag" content="categories-java"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://ji2xpro.github.io/img/avatar.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://ji2xpro.github.io/a9423429/"},"headline":"Hexo博客指南|第八篇:Icarus配置 - 用户评论插件","image":["https://ji2xpro.github.io/img/avatar.png"],"datePublished":"2020-06-04T09:11:56.000Z","dateModified":"2020-06-09T07:19:20.451Z","author":{"@type":"Person","name":"ji2xpro"},"description":"本文介绍Icarus 3支持的用户评论插件的安装配置。"}</script><link rel="alternative" href="/atom.xml" title="Ji2xpro Blog" type="application/atom+xml"><link rel="icon" href="/img/favicon.png"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.12.0/css/all.min.css"><link rel="stylesheet" href="https://fonts.loli.net/css?family=Ubuntu:400,600|Source+Code+Pro|Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Microsoft YaHei:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&amp;amp;subset=latin,latin-ext|Inconsolata|Itim|Lobster.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/pace/1.0.2/pace.min.js"></script><link rel="stylesheet" href="/css/style.css"><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="/js/globalUtils.js"></script><link rel="stylesheet" href="/live2d/waifu.css"><script type="text/javascript" async src="/live2d/autoload.js"></script></head><body class="is-3-column has-navbar-fixed-top"><nav class="navbar navbar-main is-fixed-top"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.png" alt="Ji2xpro Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/media">影音</a><a class="navbar-item" href="/album">相册</a><a class="navbar-item" href="/friend">友链</a><a class="navbar-item" href="/self-talking">碎碎念</a><a class="navbar-item" href="/message">留言</a><a class="navbar-item" href="/about">关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ji2xpro"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a></div></div></div></nav><script type="text/javascript" src="/js/theme-setting.js"></script><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><i class="far fa-calendar-plus"> </i>2020-06-04  <a class="commentCountImg" href="/a9423429/#comment-container"><span class="display-none-class">64e6ca3dfb4fad31e45ff96a226db220</span><i class="far fa-comment-dots"></i> <span class="commentCount" id="64e6ca3dfb4fad31e45ff96a226db220">99+</span>  </a><span class="level-item"><i class="far fa-clock"> </i>22 分钟  <i class="fas fa-pencil-alt"> </i>3.3 k</span><span class="level-item" id="busuanzi_container_page_pv"><i class="far fa-eye"></i>&nbsp;&nbsp;<span id="busuanzi_value_page_pv">0</span>次访问</span></div></div><h1 class="title is-3 is-size-4-mobile">Hexo博客指南|第八篇:Icarus配置 - 用户评论插件</h1><div class="content"><blockquote>
+<p>本文介绍Icarus 3支持的用户评论插件的安装配置。</p>
+</blockquote>
+<a id="more"></a>
+<article class="message message-immersive is-primary">
+<div class="message-body">
+<i class="fas fa-info-circle mr-2"></i>下面的用户评论插件由<a href="https://github.com/ppoffice/hexo-component-inferno">ppoffice/hexo-component-inferno</a>提供，完整的支持插件列表和配置详情以其为准。
+</div>
+</article>
+
+<style>
+.content ol:not([type]) {
+    list-style-type: simp-chinese-informal;
+}
+</style>
+
+<h2 id="畅言"><a href="#畅言" class="headerlink" title="畅言"></a>畅言</h2><article class="message message-immersive is-danger">
+<div class="message-body">
+<i class="fas fa-exclamation-triangle mr-2"></i>畅言云评要求站长对使用其评论服务的网站进行备案，详情请参阅
+<a href="http://changyan.kuaizhan.com/static/help/o-beian.html">ICP备案</a>。
+</div>
+</article>
+
+<p><strong>安装指南</strong></p>
+<ol>
+<li><p>首先，登录<a href="http://changyan.kuaizhan.com">畅言云评</a>，<br>并按照<a href="http://changyan.kuaizhan.com/static/help/index.html">PC端通用代码接入</a>文档获取评论HTML代码。</p>
+</li>
+<li><p>复制<code>appid</code>与<code>conf</code>的值到主题配置的对应配置项中。<br>例如，如下的HTML代码：</p>
+ <figure class="highlight html"><figcaption><span>畅言安装代码 >folded</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--PC版--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"SOHUCS"</span> <span class="attr">sid</span>=<span class="string">"..."</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"https://cy-cdn.kuaizhan.com/upload/changyan.js"</span> &gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="javascript"><span class="built_in">window</span>.changyan.api.config(&#123;</span></span><br><span class="line"><span class="actionscript">    appid: <span class="string">'????appid????'</span>,</span></span><br><span class="line"><span class="actionscript">    conf: <span class="string">'prod_xxxxxxxxxxxxxxxxxxxxxxx'</span></span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p> 对应到主题配置为：</p>
+ <figure class="highlight yaml"><figcaption><span>themes/icarus/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">changyan</span></span><br><span class="line">    <span class="attr">app_id:</span> <span class="string">????appid????</span></span><br><span class="line">    <span class="attr">conf:</span> <span class="string">prod_xxxxxxxxxxxxxxxxxxxxxxx</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<h2 id="Disqus"><a href="#Disqus" class="headerlink" title="Disqus"></a>Disqus</h2><div>
+<strong>安装指南</strong><a class="tag is-success ml-2" href="">在线预览</a>
+</div>
+
+<ol>
+<li><p>首先，登录<a href="https://disqus.com/">Disqus</a>。<br>点击首页的“开始”(GET STARTED)按钮或者访问<br><a href="https://disqus.com/profile/signup/intent/">此处</a>并点击“我想要将Disqus安装到我的站点”<br>(I want to install Disqus on my site)来创建新的站点评论服务。</p>
+<img src="https://cdn.jsdelivr.net/gh/ji2xpro/blog_image/Hexo/Plugins/Comment/Disqus/disqus-get-started.png" class="box px-0 py-0 ml-auto mr-auto" width="500" title="开始页面 - Disqus" alt="开始页面 - Disqus">
+<br>
+</li>
+<li><p>在创建新站点页面中填写“网站名称”(Website Name)以及“网站类型”(Category)，然后点击“创建站点”(Create Site)。</p>
+<img src="https://cdn.jsdelivr.net/gh/ji2xpro/blog_image/Hexo/Plugins/Comment/Disqus/disqus-create-site.png" class="box px-0 py-0 ml-auto mr-auto" width="500" title="创建站点 - Disqus" alt="创建站点 - Disqus">
+<br>
+</li>
+<li><p>如果你愿意的话，选择一个付费订阅。<br>你也可以点击左侧的“安装Disqus”(Install Disqus)来跳过此步。</p>
+</li>
+<li><p>下一步，选择Disqus的安装平台。<br>此处选择页面底部的“上面没有列出我使用的平台，使用通用代码安装”<br> (I don’t see my platform listed, install manually with Universal Code)。</p>
+<img src="https://cdn.jsdelivr.net/gh/ji2xpro/blog_image/Hexo/Plugins/Comment/Disqus/disqus-select-platform.png" class="box px-0 py-0 ml-auto mr-auto" width="500" title="选择平台 - Disqus" alt="选择平台 - Disqus">
+<br>
+</li>
+<li><p>点击页面底部的“配置”(Configure)按钮跳过“通用代码安装指南”(Universal Code install instructions)。</p>
+</li>
+<li><p>在“配置Disqus”(Configure Disqus)页面中按需填写Disqus个性化配置。<br>然后，点击“完成安装”(Complete Setup)和“关闭配置”(Dismiss Setup)按钮来结束配置。</p>
+</li>
+<li><p>下一步，在评论服务首页的右上角点击“编辑配置”(Edit Settings)按钮。</p>
+<img src="https://cdn.jsdelivr.net/gh/ji2xpro/blog_image/Hexo/Plugins/Comment/Disqus/disqus-service-homepage.png" class="box px-0 py-0 ml-auto mr-auto" width="500" title="评论服务首页 - Disqus" alt="评论服务首页 - Disqus">
+<br>
+</li>
+<li><p>在“为你的站点配置Disqus”(Configure Disqus for Your Site)页面上找到“Shortname”的值，<br>复制到主题配置的评论配置项中。<br>例如，下面截图中的“Shortname”为<code>my-hexo-blog-1</code>：</p>
+<img src="https://cdn.jsdelivr.net/gh/ji2xpro/blog_image/Hexo/Plugins/Comment/Disqus/disqus-get-shortname.png" class="box px-0 py-0 ml-auto mr-auto" width="500" title="配置Disqus - Disqus" alt="配置Disqus - Disqus">
+<br>
+
+<p>对应的主题配置为：</p>
+ <figure class="highlight yaml"><figcaption><span>themes/icarus/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">disqus</span></span><br><span class="line">    <span class="attr">shortname:</span> <span class="string">my-hexo-blog-1</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>（可选）你可以在文章的front-matter中加入<code>disqusId</code>来为文章添加Disqus唯一标识。<br>这样，你可以在未来更改文章的位置而不会丢失所有评论。</p>
+ <figure class="highlight markdown"><figcaption><span>source/_post/some-post.md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: 我的第一篇文章</span><br><span class="line">date: 2015-01-01 00:00:01</span><br><span class="line">disqusId: some-disqus-id</span><br><span class="line">---</span><br><span class="line"><span class="section"># Hello world</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<h2 id="DisqusJS"><a href="#DisqusJS" class="headerlink" title="DisqusJS"></a>DisqusJS</h2><p>在Disqus服务访问受限的地区可使用DisqusJS作为替代。<br>关于DisqusJS的配置过程可参考<a href="https://github.com/SukkaW/DisqusJS">https://github.com/SukkaW/DisqusJS</a>。</p>
+<div>
+<strong>安装指南</strong><a class="tag is-success ml-2" href="">在线预览</a>
+</div>
+
+<ol>
+<li><p>登录Disqus并访问<a href="https://disqus.com/api/applications/">此链接</a>。<br>点击“注册新应用”(Register new application)或者“注册应用”(registering an application)来创建新的Disqus应用。</p>
+<img src="https://cdn.jsdelivr.net/gh/ji2xpro/blog_image/Hexo/Plugins/Comment/DisqusJS/disqusjs-api-applications.png" class="box px-0 py-0 ml-auto mr-auto" width="500" title="应用 - Disqus" alt="应用 - Disqus">
+<br>
+</li>
+<li><p>在下一页面中填写”应用名称“(Label)，”介绍“(Description)，以及”网站地址“(Website)。<br>然后点击“注册我的应用”(Register my application)。</p>
+<img src="https://cdn.jsdelivr.net/gh/ji2xpro/blog_image/Hexo/Plugins/Comment/DisqusJS/disqusjs-register-application.png" class="box px-0 py-0 ml-auto mr-auto" width="500" title="注册应用 - Disqus" alt="注册应用 - Disqus">
+<br>
+</li>
+<li><p>应用创建完毕后，进入应用的”设置“(Settings)界面，在”域名“(Domains)输入框中填入你Hexo站点的域名，例如ppoffice.github.io。<br>然后点击页面底部的“保存更改”(Save Changes)按钮。</p>
+<img src="https://cdn.jsdelivr.net/gh/ji2xpro/blog_image/Hexo/Plugins/Comment/DisqusJS/disqusjs-application-settings.png" class="box px-0 py-0 ml-auto mr-auto" width="500" title="应用设置 - Disqus" alt="应用设置 - Disqus">
+<br>
+</li>
+<li><p>点击当前页面中的“详情”(Details)链接切换到当前应用的主页。<br>从”OAuth设置“(OAuth Settings)部分中复制”API Key“到相应的主题配置项中。</p>
+<p>例如，下面截图中的”API Key“：</p>
+<img src="https://cdn.jsdelivr.net/gh/ji2xpro/blog_image/Hexo/Plugins/Comment/DisqusJS/disqusjs-api-key.png" class="box px-0 py-0 ml-auto mr-auto" width="500" title="应用详情 - Disqus" alt="应用详情 - Disqus">
+<br>
+
+<p>对应为下面的主题配置：</p>
+ <figure class="highlight yaml"><figcaption><span>themes/icarus/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">disqusjs</span></span><br><span class="line">    <span class="attr">shortname:</span> <span class="string">my-hexo-blog-1</span></span><br><span class="line">    <span class="attr">api_key:</span> <span class="string">xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span></span><br><span class="line">    <span class="attr">api:</span> <span class="string">https://disqus.skk.moe/disqus/</span>     <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">admin:</span> <span class="string">ppoffice</span>                         <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">admin_label:</span> <span class="string">Admin</span>                      <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">nesting:</span> <span class="number">4</span>                              <span class="comment"># 可选填</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如要更多了解DisqusJS和它的配置，请访问<a href="https://github.com/SukkaW/DisqusJS">SukkaW/DisqusJS文档</a>或<br><a href="https://github.com/ppoffice/hexo-component-inferno/blob/0.2.1/src/schema/comment/disqusjs.json">hexo-component-inferno</a>。</p>
+</li>
+</ol>
+<h2 id="Facebook"><a href="#Facebook" class="headerlink" title="Facebook"></a>Facebook</h2><article class="message message-immersive is-danger">
+<div class="message-body">
+<i class="fas fa-exclamation-triangle mr-2"></i>此评论插件可能会被部分广告拦截扩展拦截，请酌情使用。
+</div>
+</article>
+
+<div>
+<strong>安装指南</strong><a class="tag is-success ml-2" href="">在线预览</a>
+</div>
+
+<ol>
+<li><p>如要开启Facebook评论服务，将<code>comment</code>的<code>type</code>设置为<code>facebook</code>即可。</p>
+ <figure class="highlight yaml"><figcaption><span>themes/icarus/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">facebook</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<h2 id="Gitalk"><a href="#Gitalk" class="headerlink" title="Gitalk"></a>Gitalk</h2><div>
+<strong>安装指南</strong><a class="tag is-success ml-2" href="">在线预览</a>
+</div>
+
+<ol>
+<li><p>登录GitHub并<a href="https://github.com/settings/applications/new">点此注册</a>一个新的OAuth应用。<br>填写”应用名称“(Application name)，”应用主页“(Homepage URL)，”应用描述“(Application description)。<br>然后，在”认证回调地址“(Authorization callback URL)填写你的博客的根URL地址。<br>点击“注册应用”(Register application)按钮来跳转到应用详情界面。</p>
+<img src="https://cdn.jsdelivr.net/gh/ji2xpro/blog_image/Hexo/Plugins/Comment/Gitalk/gitalk-register-application.png" class="box px-0 py-0 ml-auto mr-auto" width="500" title="注册OAuth应用 - GitHub" alt="注册OAuth应用 - GitHub">
+<br>
+</li>
+<li><p>复制”Client ID“与”Client Secret“的值并填入主题配置的相应配置项中。</p>
+<img src="https://cdn.jsdelivr.net/gh/ji2xpro/blog_image/Hexo/Plugins/Comment/Gitalk/gitalk-application-settings.png" class="box px-0 py-0 ml-auto mr-auto" width="500" title="OAuth应用设置 - GitHub" alt="OAuth应用设置 - GitHub">
+<br>
+
+<p>例如，对于下面的”Client ID“和”Client Secret“：</p>
+ <figure class="highlight plain"><figcaption><span>GitHub OAuth应用</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Client ID</span><br><span class="line">xxxxxxxxxxxxxxxxxxxx</span><br><span class="line">Client Secret</span><br><span class="line">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><br></pre></td></tr></table></figure>
+
+<p>对应如下的Gitalk的配置：</p>
+ <figure class="highlight yaml"><figcaption><span>themes/icarus/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">gitalk</span></span><br><span class="line">    <span class="attr">client_id:</span> <span class="string">xxxxxxxxxxxxxxxxxxxx</span></span><br><span class="line">    <span class="attr">client_secret:</span> <span class="string">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">Some-of-Your-GitHub-Repo</span></span><br><span class="line">    <span class="attr">owner:</span> <span class="string">you_github_name</span></span><br><span class="line">    <span class="attr">admin:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">you_github_name</span></span><br><span class="line">    <span class="attr">per_page:</span> <span class="number">20</span>                    <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">distraction_free_mode:</span> <span class="literal">false</span>    <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">pager_direction:</span> <span class="string">last</span>           <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">create_issue_manually:</span> <span class="literal">false</span>    <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">proxy:</span>                          <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">flip_move_options:</span>              <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">enable_hotkey:</span> <span class="literal">true</span>             <span class="comment"># 可选填</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>关于上述配置的含义和可选值，请参考<a href="https://github.com/gitalk/gitalk">Gitalk文档</a>或<br><a href="https://github.com/ppoffice/hexo-component-inferno/blob/0.2.1/src/schema/comment/gitalk.json">hexo-component-inferno</a>。</p>
+</li>
+</ol>
+<h2 id="Gitment"><a href="#Gitment" class="headerlink" title="Gitment"></a>Gitment</h2><article class="message message-immersive is-danger">
+<div class="message-body">
+<i class="fas fa-exclamation-triangle mr-2"></i>Gitment似乎已停止维护。你可以选择Gitalk或utterances作为基于GitHub Issues的评论系统的替代。
+</div>
+</article>
+
+<p><strong>安装指南</strong></p>
+<ol>
+<li><p>参照Gitalk中的步骤注册GitHub OAuth应用。</p>
+</li>
+<li><p>复制”Client ID“与”Client Secret“的值到主题配置的相应配置项中。</p>
+<p>下面是Gitment的示例配置：</p>
+ <figure class="highlight yaml"><figcaption><span>themes/icarus/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">gitment</span></span><br><span class="line">    <span class="attr">owner:</span> <span class="string">you_github_name</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">Some-of-Your-GitHub-Repo</span></span><br><span class="line">    <span class="attr">client_id:</span> <span class="string">xxxxxxxxxxxxxxxxxxxx</span></span><br><span class="line">    <span class="attr">client_secret:</span> <span class="string">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span></span><br><span class="line">    <span class="attr">theme:</span> <span class="string">gitment.defaultTheme</span>     <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">per_page:</span> <span class="number">20</span>                    <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">max_comment_height:</span> <span class="number">250</span>         <span class="comment"># 可选填</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>关于上述配置的含义，请参考<a href="https://github.com/imsun/gitment">Gitment文档</a>或<br><a href="https://github.com/ppoffice/hexo-component-inferno/blob/0.2.1/src/schema/comment/gitment.json">hexo-component-inferno</a>。</p>
+</li>
+</ol>
+<h2 id="Isso"><a href="#Isso" class="headerlink" title="Isso"></a>Isso</h2><p>如果你希望自己搭建一个评论系统而不是依赖第三方的评论服务时，Isso是一个可行的选择。<br>然而，不同于第三方评论系统，你需要准备一个Web服务器用来运行Isso服务端程序。</p>
+<p><strong>安装指南</strong></p>
+<ol>
+<li><p>请参照<a href="https://posativ.org/isso/docs/install/">Isso文档</a>安装并启动Isso服务器。</p>
+</li>
+<li><p>将Isso服务器的HTTP URL填入到主题配置的相应配置项中。<br>例如，如果你的Isso服务地址为<code>https://posativ.org/isso/api/</code>，你会有如下的评论配置：</p>
+ <figure class="highlight yaml"><figcaption><span>themes/icarus/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">isso</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">posativ.org/isso/api</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<h2 id="LiveRe"><a href="#LiveRe" class="headerlink" title="LiveRe"></a>LiveRe</h2><article class="message message-immersive is-danger">
+<div class="message-body">
+<i class="fas fa-exclamation-triangle mr-2"></i>此评论插件可能会被部分广告拦截扩展拦截，请酌情使用。
+</div>
+</article>
+
+<div>
+<strong>安装指南</strong><a class="tag is-success ml-2" href="">在线预览</a>
+</div>
+
+<ol>
+<li><p>首先，登录<a href="https://livere.com/">LiveRe</a>。<br>点击导航栏上的“安装”(Install)链接，进入安装界面。</p>
+</li>
+<li><p>选择免费”City“选项下方的“现在安装”(Install Now)按钮。</p>
+<img src="https://cdn.jsdelivr.net/gh/ji2xpro/blog_image/Hexo/Plugins/Comment/LiveRe/livere-select-plan.png" class="box px-0 py-0 ml-auto mr-auto" width="500" title="选择付费方案 - LiveRe" alt="选择付费方案 - LiveRe">
+<br>
+</li>
+<li><p>在”获取LiveRe City代码“(Get LiveRe City code)页面填写”站点地址“(Site URL)，”网站名称“(Name of website)，<br>和”网站类别“(Choose site category)。<br>勾选“同意广告协议”(I have check the advertising terms…)并点击”获取代码“(Get code)按钮来跳转到LiveRe HTML代码页面。</p>
+<img src="https://cdn.jsdelivr.net/gh/ji2xpro/blog_image/Hexo/Plugins/Comment/LiveRe/livere-configure-service.png" class="box px-0 py-0 ml-auto mr-auto" width="500" title="配置服务 - LiveRe" alt="配置服务 - LiveRe">
+<br>
+</li>
+<li><p>复制<code>data-uid=&quot;...&quot;</code>引号内的值到主题配置中的相应配置项中。</p>
+<img src="https://cdn.jsdelivr.net/gh/ji2xpro/blog_image/Hexo/Plugins/Comment/LiveRe/livere-get-code.png" class="box px-0 py-0 ml-auto mr-auto" width="500" title="获取代码 - LiveRe" alt="获取代码 - LiveRe">
+<br>
+
+<p>例如，下方的LiveRe代码：</p>
+<figure class="highlight html"><figcaption><span>LiveRe安装代码 >folded</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- LiveRe City install code --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"lv-container"</span> <span class="attr">data-id</span>=<span class="string">"city"</span> <span class="attr">data-uid</span>=<span class="string">"ABCD1234O0OxxxxXXXX000=="</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="actionscript">   (<span class="function"><span class="keyword">function</span><span class="params">(d, s)</span> </span>&#123;</span></span><br><span class="line"><span class="actionscript">      <span class="keyword">var</span> j, e = d.getElementsByTagName(s)[<span class="number">0</span>];</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">      <span class="keyword">if</span> (<span class="keyword">typeof</span> LivereTower === <span class="string">'function'</span>) &#123; <span class="keyword">return</span>; &#125;</span></span><br><span class="line"></span><br><span class="line">      j = d.createElement(s);</span><br><span class="line"><span class="actionscript">      j.src = <span class="string">'https://cdn-city.livere.com/js/embed.dist.js'</span>;</span></span><br><span class="line"><span class="actionscript">      j.async = <span class="literal">true</span>;</span></span><br><span class="line"></span><br><span class="line">      e.parentNode.insertBefore(j, e);</span><br><span class="line"><span class="javascript">   &#125;)(<span class="built_in">document</span>, <span class="string">'script'</span>);</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">noscript</span>&gt;</span> Please activate JavaScript for write a comment in LiveRe<span class="tag">&lt;/<span class="name">noscript</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- completed City install code --&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>对应的主题配置为：</p>
+ <figure class="highlight yaml"><figcaption><span>themes/icarus/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">livere</span></span><br><span class="line">    <span class="attr">uid:</span> <span class="string">ABCD1234O0OxxxxXXXX000==</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<h2 id="utterances"><a href="#utterances" class="headerlink" title="utterances"></a>utterances</h2><div>
+<strong>安装指南</strong><a class="tag is-success ml-2" href="">在线预览</a>
+</div>
+
+<ol>
+<li><p>准备一个公开的GitHub仓库(Repository)。</p>
+</li>
+<li><p>访问<a href="https://github.com/apps/utterances">GitHub Apps - utterances</a>并点击”安装“(Install)。</p>
+<img src="https://cdn.jsdelivr.net/gh/ji2xpro/blog_image/Hexo/Plugins/Comment/utterances/utterances-github-app.png" class="box px-0 py-0 ml-auto mr-auto" width="500" title="GitHub应用页 - utterances" alt="GitHub应用页 - utterances">
+<br>
+</li>
+<li><p>(可选)如果你的账号下有组织账号，在下一页中选择需要安装utterances的用户。</p>
+<img src="https://cdn.jsdelivr.net/gh/ji2xpro/blog_image/Hexo/Plugins/Comment/utterances/utterances-select-user.png" class="box px-0 py-0 ml-auto mr-auto" width="500" title="选择用户 - utterances" alt="选择用户 - utterances">
+<br>
+</li>
+<li><p>在下一页面选择将utterances安装到”所有仓库“(All repositories)或是”选定的仓库“(Only select repositories)。<br>然后点击“安装”(Install)按钮。</p>
+<img src="https://cdn.jsdelivr.net/gh/ji2xpro/blog_image/Hexo/Plugins/Comment/utterances/utterances-select-repo.png" class="box px-0 py-0 ml-auto mr-auto" width="500" title="选择仓库 - utterances" alt="选择仓库 - utterances">
+<br>
+</li>
+<li><p>若安装成功，网页将跳转到<a href="https://utteranc.es/">utterances官网</a>。<br>你可以阅读每个的配置项的说明，并按照配置你的utterances安装。</p>
+</li>
+<li><p>完成配置后，转到页面上的”开启utterances“(Enable Utterances)并从utterances的HTML代码中复制属性值到主题配置的对应配置项中。</p>
+<img src="https://cdn.jsdelivr.net/gh/ji2xpro/blog_image/Hexo/Plugins/Comment/utterances/utterances-get-code.png" class="box px-0 py-0 ml-auto mr-auto" width="500" title="获取代码 - utterances" alt="获取代码 - utterances">
+<br>
+
+<p>例如下面的utterances代码：</p>
+<figure class="highlight html"><figcaption><span>utterances安装代码 >folded</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://utteranc.es/client.js"</span></span></span><br><span class="line"><span class="tag">      <span class="attr">repo</span>=<span class="string">"Your-GitHub-Username/Your-Public-Repo-Name"</span></span></span><br><span class="line"><span class="tag">      <span class="attr">issue-term</span>=<span class="string">"pathname"</span></span></span><br><span class="line"><span class="tag">      <span class="attr">theme</span>=<span class="string">"github-light"</span></span></span><br><span class="line"><span class="tag">      <span class="attr">crossorigin</span>=<span class="string">"anonymous"</span></span></span><br><span class="line"><span class="tag">      <span class="attr">async</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>对应下面的主题配置：</p>
+ <figure class="highlight yaml"><figcaption><span>themes/icarus/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">utterances</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">Your-GitHub-Username/Your-Public-Repo-Name</span></span><br><span class="line">    <span class="attr">issue_term:</span> <span class="string">pathname</span>        <span class="comment"># 必填项，与issue_number二选一填写</span></span><br><span class="line">    <span class="attr">issue_number:</span> <span class="number">100</span>           <span class="comment"># 必填项，与issue_term二选一填写，每篇文章对应一个issue，填写前需要手动创建issue</span></span><br><span class="line">    <span class="attr">label:</span> <span class="string">some-issue-label</span>     <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">theme:</span> <span class="string">github-light</span>         <span class="comment"># 可选填</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<h2 id="Valine"><a href="#Valine" class="headerlink" title="Valine"></a>Valine</h2><div>
+<strong>安装指南</strong><a class="tag is-success ml-2" href="">在线预览</a>
+</div>
+
+<ol>
+<li><p>按照<a href="https://valine.js.org/quickstart.html">快速开始文档</a>创建LeanCloud应用。</p>
+</li>
+<li><p>将你LeanCloud应用的”App ID“和”App Key“复制到主题配置的对应配置项中。<br>此外，你可以参考<a href="https://valine.js.org/configuration.html">配置项</a>来了解可选配置项的详情和可能的配置值。<br>下面是示例配置：</p>
+ <figure class="highlight yaml"><figcaption><span>themes/icarus/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">valine</span></span><br><span class="line">    <span class="attr">app_id:</span> <span class="string">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span></span><br><span class="line">    <span class="attr">app_key:</span> <span class="string">xxxxxxxxxxxxxxxxxxxxxx</span></span><br><span class="line">    <span class="attr">placeholder:</span> <span class="string">""</span>                 <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">avatar:</span> <span class="string">mm</span>                      <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">avatar_force:</span> <span class="literal">false</span>             <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">meta:</span> <span class="string">["nick",</span> <span class="string">"mail"</span><span class="string">,</span> <span class="string">"link"</span><span class="string">]</span>  <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">page_size:</span> <span class="number">10</span>                   <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">lang:</span> <span class="string">zh-CN</span>                     <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">visitor:</span> <span class="literal">false</span>                  <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">highlight:</span> <span class="literal">true</span>                 <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">record_ip:</span> <span class="literal">false</span>                <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">server_urls:</span>                    <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">emoji_cdn:</span>                      <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">emoji_maps:</span>                     <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">enable_qq:</span> <span class="literal">false</span>                <span class="comment"># 可选填</span></span><br><span class="line">    <span class="attr">required_fields:</span> <span class="string">[]</span>             <span class="comment"># 可选填</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>参考文章:<br><a href="">参考链接</a></p>
+<article class="message message-immersive is-warning">
+<div class="message-body">
+<i class="fas fa-question-circle mr-2"></i>文章内容有误？请点击<a href="https://github.com/ji2xpro/ji2xpro.github.io/edit/sourceCode/source/_posts/hexo/Hexo博客指南-第八篇-Icarus配置-用户评论插件">此处</a>提交修改。
+</div>
+</article></div><ul class="post-copyright"><li><strong>本文标题：</strong><a href="https://ji2xpro.github.io/a9423429/">Hexo博客指南|第八篇:Icarus配置 - 用户评论插件</a></li><li><strong>本文作者：</strong><a href="https://ji2xpro.github.io">Ji2xpro</a></li><li><strong>本文链接：</strong><a href="https://ji2xpro.github.io/a9423429/">https://ji2xpro.github.io/a9423429/</a></li><li><strong>版权声明：</strong><span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</span></li></ul><div><div class="recommend-post"><span class="is-size-6 has-text-grey has-mr-7"># 相关文章</span><br><span>  1.<a class="is-size-6" href="/51e57588/" target="_blank">Hexo博客指南|第十四篇:Icarus配置 - 其他插件</a><br></span><span>  2.<a class="is-size-6" href="/ea684c22/" target="_blank">Hexo博客指南|第十三篇:Icarus配置 - 网站搜索插件</a><br></span><span>  3.<a class="is-size-6" href="/88bd6454/" target="_blank">Hexo博客指南|第十二篇:Icarus配置 - 网站分析插件</a><br></span><span>  4.<a class="is-size-6" href="/14fbeb99/" target="_blank">Hexo博客指南|第十一篇:Icarus配置 - 分享按钮插件</a><br></span><span>  5.<a class="is-size-6" href="/7a270e6f/" target="_blank">Hexo博客指南|第十篇:Icarus配置 - 赞赏按钮插件</a><br></span><span>  6.<a class="is-size-6" href="/1b3e8d7b/" target="_blank">Hexo博客指南|第九篇:Icarus配置 - 评论扩展:Gitalk/Gitment评论自动初始化</a><br></span><span>  7.<a class="is-size-6" href="/3e3a147e/" target="_blank">Hexo博客指南|第七篇:Icarus配置 - 挂件</a><br></span></div><div class="recommend-post"><span class="is-size-6 has-text-grey has-mr-7"># 推荐文章</span><br><span>  1.<a class="is-size-6" href="/74ef0370/" target="_blank">Telegram汇总分享</a><br></span><span>  2.<a class="is-size-6" href="/d5e96cb9/" target="_blank">Hexo博客指南|第一篇:环境搭建</a><br></span><span>  3.<a class="is-size-6" href="/f96960e6/" target="_blank">Hexo博客指南|第二篇:主题配置</a><br></span><span>  4.<a class="is-size-6" href="/3e3a147e/" target="_blank">Hexo博客指南|第七篇:Icarus配置 - 挂件</a><br></span><span>  5.<a class="is-size-6" href="/22d1bb0/" target="_blank">Hexo博客指南|第三篇:常见问题</a><br></span><span>  6.<a class="is-size-6" href="/91a14ab9/" target="_blank">Hexo博客指南|第五篇:github page网站cdn优化加速</a><br></span></div></div><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/social-share.js/1.0.16/css/share.min.css"><div class="social-share"></div><script src="https://cdnjs.loli.net/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button is-info donate"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190802135456.png" alt="支付宝"></span></a><a class="button is-success donate"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190802135550.png" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/1b3e8d7b/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">Hexo博客指南|第九篇:Icarus配置 - 评论扩展:Gitalk/Gitment评论自动初始化</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/3e3a147e/"><span class="level-item">Hexo博客指南|第七篇:Icarus配置 - 挂件</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><div class="title is-5">评论</div><div id="comment-container"></div><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/gitalk/1.6.0/gitalk.css"><script> $.getScript('/js/gitalk.min.js', function () { 
+            var gitalk = new Gitalk({
+            language:'zh-CN',
+            id: '64e6ca3dfb4fad31e45ff96a226db220',
+            repo: 'blog_comment',
+            owner: 'ji2xpro',
+            clientID: '1290ff17595f9d44999f',
+            clientSecret: '145d2a46ea42f48446ea6eb251cde00b1b88783f',
+            admin: ["ji2xpro"],
+            createIssueManually: true,
+            distractionFreeMode: false,
+            perPage: 10,
+            pagerDirection: 'last',
+            
+            
+            enableHotKey: true,
+            isLocked: false
+        })
+        gitalk.render('comment-container')});</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1 is-sticky"><div class="card widget toc-scroll" id="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list toc"><li><a class="is-flex toc-item" id="toc-item-畅言" href="#畅言"><span>畅言</span></a></li><li><a class="is-flex toc-item" id="toc-item-Disqus" href="#Disqus"><span>Disqus</span></a></li><li><a class="is-flex toc-item" id="toc-item-DisqusJS" href="#DisqusJS"><span>DisqusJS</span></a></li><li><a class="is-flex toc-item" id="toc-item-Facebook" href="#Facebook"><span>Facebook</span></a></li><li><a class="is-flex toc-item" id="toc-item-Gitalk" href="#Gitalk"><span>Gitalk</span></a></li><li><a class="is-flex toc-item" id="toc-item-Gitment" href="#Gitment"><span>Gitment</span></a></li><li><a class="is-flex toc-item" id="toc-item-Isso" href="#Isso"><span>Isso</span></a></li><li><a class="is-flex toc-item" id="toc-item-LiveRe" href="#LiveRe"><span>LiveRe</span></a></li><li><a class="is-flex toc-item" id="toc-item-utterances" href="#utterances"><span>utterances</span></a></li><li><a class="is-flex toc-item" id="toc-item-Valine" href="#Valine"><span>Valine</span></a></li></ul></div></div><script type="text/javascript" async>
+        $(document).ready(function () { //参考自 https://github.com/ppoffice/hexo-theme-icarus/pull/616/files
+            var observerTopMargin;
+            var scrollObserver;
+            var headerElems = $(".headerlink");
+            var activeTocItem;
+        
+            function initIntersectionObserver(docHeight) {
+                observerTopMargin = docHeight;
+                scrollObserver = new IntersectionObserver(scrollCallBack,
+                    {
+                        root: null,  // viewpoint
+                        rootMargin: docHeight + "px 0px -80% 0px"  // cover top 30% of viewport to the top of document
+                    })
+            }
+        
+            function scrollCallBack(entries, observer) {
+                if ($(window).scrollTop() > observerTopMargin * 0.7) { 
+                    // User somehow scroll to 70% of observerTopMargin (which is inited as 200% document height)
+                    // Observer top margin need to extend to cover all the space to the top of the document
+                    initIntersectionObserver(observerTopMargin * 2)
+                    observer.disconnect();
+                    return;
+                }
+                let toActive;
+                if (entries[0].intersectionRatio == 1) {  // enter viewed area
+                    let entry = entries.reduce((u, v) => (u.target.toc_id > v.target.toc_id ? u : v));  // get the lowest item
+                    toActive = $("#toc-item-" + $(entry.target).attr("href").substr(1));
+                } else {
+                    let entry = entries.reduce((u, v) => (u.target.toc_id < v.target.toc_id ? u : v));  // get the highest item
+                    let idx = Math.max(entry.target.toc_id - 1, 0);
+                    toActive = $("#toc-item-" + $(headerElems[idx]).attr("href").substr(1));
+                }
+                if (activeTocItem) activeTocItem.removeClass("is-current");
+                activeTocItem = toActive
+                activeTocItem.addClass("is-current");
+            }
+        
+            initIntersectionObserver($(document).height() * 2);
+            headerElems.each(function (index, obj) {
+                obj.toc_id = index;
+                scrollObserver.observe(obj);
+            })
+        });</script></div><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="is-rounded" src="/img/avatar.png" alt="Ji2xpro"></figure><p class="title is-size-4 is-block line-height-inherit">Ji2xpro</p><p class="is-size-6 is-block">尚未执佩剑，转眼即江湖</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>中国.上海</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">16</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">3</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">2</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/ji2xpro" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/ji2xpro"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Weibo" href="https://weibo.com/u/2521355870"><i class="fab fa-weibo"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Email" href="mailto:ji2xpro@163.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="Next" href="https://removeif.github.io/remove.io"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-white is-marginless" target="_blank" rel="noopener" title="RSS" href="/atom.xml"><i class="fas fa-rss"></i></a></div><div><hr><p id="hitokoto">:D 一言句子获取中...</p><script type="text/javascript" defer>function getYiyan(){
+                                $.getJSON("https://v1.hitokoto.cn/", function (data) {
+                                if(data){
+                                    $('#hitokoto').html("");
+                                    $('#hitokoto').append("<strong style='color: #3273dc;'>"+data.hitokoto+"</strong>"+
+                                    "<p>"+"来源《"+data.from+"》</p><p>提供者-"+data.creator+"</p>");
+                                }});}
+                                $(function (){getYiyan();$('#hitokoto').click(function(){getYiyan();})});</script></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">最新评论</h3><span class="body_hot_comment">加载中，最新评论有1分钟缓存...</span></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2020-06-08T03:46:07.000Z">2020-06-08</time></p><p class="title is-6"><a class="link-muted" href="/51e57588/">Hexo博客指南|第十四篇:Icarus配置 - 其他插件</a></p><p class="is-uppercase"><i class="fas fa-folder-open has-text-grey"> </i><a class="link-muted" href="/categories/Hexo%E6%95%99%E7%A8%8B/">Hexo教程</a> / <a class="link-muted" href="/categories/Hexo%E6%95%99%E7%A8%8B/%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/">主题配置</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-06-08T03:44:24.000Z">2020-06-08</time></p><p class="title is-6"><a class="link-muted" href="/ea684c22/">Hexo博客指南|第十三篇:Icarus配置 - 网站搜索插件</a></p><p class="is-uppercase"><i class="fas fa-folder-open has-text-grey"> </i><a class="link-muted" href="/categories/Hexo%E6%95%99%E7%A8%8B/">Hexo教程</a> / <a class="link-muted" href="/categories/Hexo%E6%95%99%E7%A8%8B/%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/">主题配置</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-06-08T03:40:05.000Z">2020-06-08</time></p><p class="title is-6"><a class="link-muted" href="/88bd6454/">Hexo博客指南|第十二篇:Icarus配置 - 网站分析插件</a></p><p class="is-uppercase"><i class="fas fa-folder-open has-text-grey"> </i><a class="link-muted" href="/categories/Hexo%E6%95%99%E7%A8%8B/">Hexo教程</a> / <a class="link-muted" href="/categories/Hexo%E6%95%99%E7%A8%8B/%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/">主题配置</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-06-08T03:39:17.000Z">2020-06-08</time></p><p class="title is-6"><a class="link-muted" href="/14fbeb99/">Hexo博客指南|第十一篇:Icarus配置 - 分享按钮插件</a></p><p class="is-uppercase"><i class="fas fa-folder-open has-text-grey"> </i><a class="link-muted" href="/categories/Hexo%E6%95%99%E7%A8%8B/">Hexo教程</a> / <a class="link-muted" href="/categories/Hexo%E6%95%99%E7%A8%8B/%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/">主题配置</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-06-05T10:17:04.000Z">2020-06-05</time></p><p class="title is-6"><a class="link-muted" href="/7a270e6f/">Hexo博客指南|第十篇:Icarus配置 - 赞赏按钮插件</a></p><p class="is-uppercase"><i class="fas fa-folder-open has-text-grey"> </i><a class="link-muted" href="/categories/Hexo%E6%95%99%E7%A8%8B/">Hexo教程</a> / <a class="link-muted" href="/categories/Hexo%E6%95%99%E7%A8%8B/%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/">主题配置</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Hexo%E6%95%99%E7%A8%8B/"><span class="level-start"><span class="level-item">Hexo教程</span></span><span class="level-end"><span class="level-item tag">14</span></span></a><ul class="mr-0"><li><a class="level is-mobile is-marginless" href="/categories/Hexo%E6%95%99%E7%A8%8B/%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/"><span class="level-start"><span class="level-item">主题配置</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Hexo%E6%95%99%E7%A8%8B/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"><span class="level-start"><span class="level-item">博客搭建</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li></ul></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/06/"><span class="level-start"><span class="level-item">六月 2020</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">五月 2020</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Icarus%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/"><span class="tag">Icarus主题配置</span><span class="tag is-grey-lightest">8</span></a></div><div class="control"><a class="tags has-addons" href="/tags/hexo%E5%8D%9A%E5%AE%A2/"><span class="tag">hexo博客</span><span class="tag is-grey-lightest">6</span></a></div></div></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=ji2xproblog&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="ji2xproblog" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button is-primary" type="submit" value="订阅"></div></div><p class="help">输入邮箱开始订阅，更博后邮件通知！</p></form></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.png" alt="Ji2xpro Blog" height="28"></a><p class="size-small"><span>&copy; 2020 Ji2xpro</span>  Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>,Modify by <a href="https://github.com/ji2xpro/ji2xpro.github.io/tree/sourceCode" target="_blank">ji2xpro</a> <br><span>© 版权说明：[本网站所有内容均收集于互联网或自己创作,<br />&nbsp;&nbsp;&nbsp;&nbsp;方便于网友与自己学习交流，如有侵权，请<a href="/message" target="_blank">留言</a>，立即处理]<br /></span><span><span id="statistic-times">loading...</span><script>function createTime(time) {
+            var n = new Date(time);
+            now.setTime(now.getTime() + 250),
+                days = (now - n) / 1e3 / 60 / 60 / 24,
+                dnum = Math.floor(days),
+                hours = (now - n) / 1e3 / 60 / 60 - 24 * dnum,
+                hnum = Math.floor(hours),
+            1 == String(hnum).length && (hnum = "0" + hnum),
+                minutes = (now - n) / 1e3 / 60 - 1440 * dnum - 60 * hnum,
+                mnum = Math.floor(minutes),
+            1 == String(mnum).length && (mnum = "0" + mnum),
+                seconds = (now - n) / 1e3 - 86400 * dnum - 3600 * hnum - 60 * mnum,
+                snum = Math.round(seconds),
+            1 == String(snum).length && (snum = "0" + snum),
+                document.getElementById("statistic-times").innerHTML = "❤️本站自 <strong>"+time.split(" ")[0].replace(/\//g,".")+"</strong> 已运行 <strong>" + dnum + "</strong> 天 <strong>" + hnum + "</strong> 小时 <strong>" + mnum + "</strong> 分 <strong>" + snum + "</strong> 秒！❤️";
+        }var now = new Date();setInterval("createTime('2020/01/01 00:00:00')", 250,"");</script><br></span><div class="size-small"><span>❤️感谢 <strong><span id="busuanzi_value_site_uv">99+</span></strong> 小伙伴的 <strong><span id="busuanzi_value_site_pv">99+</span></strong> 次光临！❤️</span></div></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ji2xpro"><i class="fab fa-github"></i></a></p></div><div class="sideMusic"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="/js/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script><meting-js style="width: auto;height: 2000px;" server="netease" type="playlist" id="2364053447" theme="#2980b9" loop="all" autoplay="false" order="list" storageName="aplayer-setting" lrctype="0" list-max-height="400px" fixed="true"></meting-js></div></div></div></div></footer><script src="https://cdnjs.loli.net/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            site: {
+                url: 'https://ji2xpro.github.io',
+                external_link: {"enable":true,"exclude":[]}
+            },
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="https://cdnjs.loli.net/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" defer></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back-to-top.js" defer></script><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js" defer></script><script src="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js" defer></script><!--!--><!--!--><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/KaTeX/0.11.1/katex.min.css"><script src="https://cdnjs.loli.net/ajax/libs/KaTeX/0.11.1/katex.min.js" defer></script><script src="https://cdnjs.loli.net/ajax/libs/KaTeX/0.11.1/contrib/auto-render.min.js" defer></script><script>document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><!--!--><!--!--><script src="/js/toc.js" defer></script><script src="/js/main.js" defer></script><script>$.getScript('/js/comment-issue-data.js',function(){loadIssueData('1290ff17595f9d44999f','145d2a46ea42f48446ea6eb251cde00b1b88783f','ji2xpro','blog_comment',false);})</script><link rel="stylesheet" href="/css/insight.css"><div class="searchbox ins-search"><div class="searchbox-container ins-search-container"><div class="searchbox-input-wrapper"><input class="searchbox-input ins-search-input" type="text" placeholder="想要查找什么..."><span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span></div><div class="searchbox-result-wrapper ins-section-wrapper"><div class="ins-section-container"></div></div></div></div><script>(function (window) {
+            var INSIGHT_CONFIG = {
+                TRANSLATION: {
+                    POSTS: '文章',
+                    PAGES: '页面',
+                    CATEGORIES: '分类',
+                    TAGS: '标签',
+                    UNTITLED: '(无标题)',
+                },
+                CONTENT_URL: '/content.json',
+            };
+            window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+        })(window);</script><script src="/js/insight.js" defer></script></body></html>
