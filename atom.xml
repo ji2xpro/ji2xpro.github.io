@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ji2xpro.github.io/"/>
-  <updated>2020-06-09T07:19:57.976Z</updated>
+  <updated>2021-01-21T11:57:08.817Z</updated>
   <id>https://ji2xpro.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>blog备份|待整理</title>
+    <link href="https://ji2xpro.github.io/d1c0bae4/"/>
+    <id>https://ji2xpro.github.io/d1c0bae4/</id>
+    <published>2021-01-21T11:12:17.000Z</published>
+    <updated>2021-01-21T11:57:08.817Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>摘要<br>首页显示摘要内容（替换成自己的）</p></blockquote><a id="more"></a><p>正文内容（替换成自己的）</p><p>参考文章:<br><a href="https://ji2xpro.coding.net/login?redirect=https%253A%252F%252Fji2xpro.coding.net%252Fuser">CODING</a><br><a href="https://docs.github.com/en/articles/custom-404-Pages">GitHub 404</a><br><a href="https://www.simon96.online/2018/10/12/hexo-tutorial/">最全Hexo博客搭建+主题优化+插件配置+常用操作+错误分析</a><br><a href="https://linghucong.js.org/2016/04/15/2016-04-15-hexo-github-pages-blog/">手把手教你使用Hexo + Github Pages搭建个人独立博客</a><br><a href="https://xuanwo.io/2015/03/26/hexo-intor/">史上最详细的Hexo博客搭建图文教程</a><br><a href="https://zespia.tw/blog/2015/01/21/continuous-deployment-to-github-with-travis/">用 Travis CI 自動部署網站到 GitHub</a><br><a href="https://notes.iissnan.com/2016/publishing-github-pages-with-travis-ci/">使用 Travis CI 自动更新 GitHub Pages</a><br><a href="https://farseerfc.me/travis-push-to-github-pages-blog.html">用 Travis-CI 生成 Github Pages 博客</a><br><a href="https://kchen.cc/2016/11/12/hexo-instructions/">基于 Hexo 的全自动博客构建部署系统</a><br><a href="https://hexo.io/zh-cn/docs/github-pages">将 Hexo 部署到 GitHub Pages</a></p><p>已整理<br><a href="https://www.jianshu.com/p/141abf1700da">如何搭建一个独立博客——简明Github Pages与Hexo教程</a><br><a href="https://blog.csdn.net/poem_of_sunshine/article/details/29369785/">如何搭建一个独立博客——简明Github Pages与Hexo教程</a></p><article class="message message-immersive is-warning"><div class="message-body"><i class="fas fa-question-circle mr-2"></i>文章内容有误？请点击<a href="替换成自己的url">此处</a>提交修改。</div></article>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;摘要&lt;br&gt;首页显示摘要内容（替换成自己的）&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hexo博客指南|第十四篇:Icarus配置 - 其他插件</title>
